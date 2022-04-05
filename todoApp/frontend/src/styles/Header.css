@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  background-color: #659dbd;
+  margin-bottom: 30px;
+  height: 60px;
+}
+header ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style-type: none;
+  margin-right: 35px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+}
+header ul li .Link {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=Header.css.map */

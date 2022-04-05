@@ -1,0 +1,23 @@
+@import 'mixins';
+header {
+    width: 100%;
+    background-color: #659dbd;
+    margin-bottom: 30px;
+    height: 60px;
+    ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            list-style-type: none;
+            margin-right: 35px;
+            .fontMixin(white,20px,300);
+            cursor: pointer;
+            .Link {
+                .fontMixin(white,20px,300);
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+@import 'mixins';
+@greyColor: #E8E9EB;
+
+.App {
+  margin: 0 auto;
+  width: 70%;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+  .content {
+    h1 {
+      .fontMixin(black,50px,300)
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .AddTusk {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      @media(max-width: 500px) {
+        width: 100%;
+      }
+      textarea {
+        resize: none;
+        width: 600px;
+        height: 60px;
+        border: 2px solid @greyColor;
+        padding: 10px;
+        .fontMixin(darken(@greyColor,30%),14px,300);
+        &:focus,
+        &:active,
+        &:hover {
+          outline: none;
+        }
+        @media(max-width: 500px) {
+          width: 80%;
+        }
+      }
+      button {
+        border: none;
+        background-color:  #7bc043;
+        width: 60px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        .fontMixin(white,15px,500);
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      max-width: 60%;
+      @media(max-width: 500px) {
+        max-width: 100%;
+      }
+      li {
+        height: 40px;
+        width: fit-content;
+        margin-bottom: 15px;
+        border-bottom: 2px solid @greyColor;
+        display: flex;
+        align-items: center;
+        .fontMixin(#aaaaaa,14px,500);
+        @media (max-width: 500px) {
+          padding: 0 7px 0 7px;
+          .fontMixin(#aaa,12px,300)
+        }
+        .checkbox {
+          input {
+            width: 40px;
+          }
+        }
+        .delete {
+          margin-left: 15px;
+          button {
+            height: 25px;
+            width: 70px;
+            border: none;
+            color: white;
+            background-color: #e03906;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        }
+        .edit {
+          margin-left: 15px;
+          button {
+            height: 25px;
+            width: 70px;
+            border: none;
+            color: white;
+            background-color: #f37736;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        }
+        .tusk {
+          .line-through {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

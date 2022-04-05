@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus,
+*:active,
+*:hover {
+  outline: none;
+}
+.App {
+  margin: 0 auto;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .App {
+    width: 100%;
+  }
+}
+.App .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.App .content h1 {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+}
+.App .content .AddTusk {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .App .content .AddTusk {
+    width: 100%;
+  }
+}
+.App .content .AddTusk textarea {
+  resize: none;
+  width: 600px;
+  height: 60px;
+  border: 2px solid #E8E9EB;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #969ba4;
+}
+.App .content .AddTusk textarea:focus,
+.App .content .AddTusk textarea:active,
+.App .content .AddTusk textarea:hover {
+  outline: none;
+}
+@media (max-width: 500px) {
+  .App .content .AddTusk textarea {
+    width: 80%;
+  }
+}
+.App .content .AddTusk button {
+  border: none;
+  background-color: #7bc043;
+  width: 60px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: white;
+}
+.App .content ul {
+  margin: 0;
+  padding: 0;
+  max-width: 60%;
+}
+@media (max-width: 500px) {
+  .App .content ul {
+    max-width: 100%;
+  }
+}
+.App .content ul li {
+  height: 40px;
+  width: fit-content;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #E8E9EB;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #aaaaaa;
+}
+@media (max-width: 500px) {
+  .App .content ul li {
+    padding: 0 7px 0 7px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #aaa;
+  }
+}
+.App .content ul li .checkbox input {
+  width: 40px;
+}
+.App .content ul li .delete {
+  margin-left: 15px;
+}
+.App .content ul li .delete button {
+  height: 25px;
+  width: 70px;
+  border: none;
+  color: white;
+  background-color: #e03906;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.App .content ul li .edit {
+  margin-left: 15px;
+}
+.App .content ul li .edit button {
+  height: 25px;
+  width: 70px;
+  border: none;
+  color: white;
+  background-color: #f37736;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.App .content ul li .tusk .line-through {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=App.css.map */

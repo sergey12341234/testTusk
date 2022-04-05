@@ -1,0 +1,41 @@
+.App .Login {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px auto 0 auto;
+  width: 320px;
+  height: 180px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 7px 0px rgba(0, 0, 0, 0);
+}
+.App .Login h1 {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 15px;
+}
+.App .Login input {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  width: 70%;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid black;
+}
+.App .Login .loginLink {
+  width: 50%;
+}
+.App .Login .loginLink button {
+  margin-top: 25px;
+  width: 100%;
+  height: 35px;
+  background-color: #7bc043;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+/*# sourceMappingURL=Login.css.map */
